@@ -94,14 +94,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 pr-1 aside-stretch">
-					<form action="#" class="booking-form">
+					<form action="./php/check.php" method="POST" class="booking-form">
 						<div class="row">
 							<div class="col-md d-flex py-md-4">
 								<div class="form-group align-self-stretch d-flex align-items-end">
 									<div class="wrap bg-white align-self-stretch py-3 px-4">
 										<label for="#">Дата заезда</label>
 										<input type="text" class="form-control checkin_date"
-											placeholder="Дата заезда">
+											placeholder="Дата заезда" id="checkin" name="checkin" autocomplete="off">
 									</div>
 								</div>
 							</div>
@@ -110,7 +110,7 @@
 									<div class="wrap bg-white align-self-stretch py-3 px-4">
 										<label for="#">Дата выезда</label>
 										<input type="text" class="form-control checkout_date"
-											placeholder="Дата выезда">
+											placeholder="Дата выезда" id="checkout" name="checkout" autocomplete="off">
 									</div>
 								</div>
 							</div>
@@ -121,13 +121,13 @@
 										<div class="form-field">
 											<div class="select-wrap">
 												<div class="icon"><span class="ion-ios-arrow-down"></span></div>
-												<select name="" id="" class="form-control">
-													<option value="">Маленькая</option>
-													<option value="">Семейный номер</option>
-													<option value="">Стандартный номер</option>
-													<option value="">Улучшенный номер</option>
-													<option value="">Люкс</option>
-													<option value="">Президентский номер</option>
+												<select name="type" id="type" class="form-control">
+													<option value="Уютный">Уютный</option>
+													<option value="Семейный">Семейный номер</option>
+													<option value="Стандартный">Стандартный номер</option>
+													<option value="Улучшенный">Улучшенный номер</option>
+													<option value="Люкс">Люкс</option>
+													<option value="Президентский">Президентский номер</option>
 												</select>
 											</div>
 										</div>
@@ -141,13 +141,13 @@
 										<div class="form-field">
 											<div class="select-wrap">
 												<div class="icon"><span class="ion-ios-arrow-down"></span></div>
-												<select name="" id="" class="form-control">
-													<option value="">1 взрослый</option>
-													<option value="">2 взрослых</option>
-													<option value="">3 взрослых</option>
-													<option value="">4 взрослых</option>
-													<option value="">2 взрослых/1 ребенок</option>
-													<option value="">3 взрослых/2 ребенок</option>
+												<select name="person" id="person" class="form-control">
+													<option value="1 взрослый">1 взрослый</option>
+													<option value="2 взрослых">2 взрослых</option>
+													<option value="3 взрослых">3 взрослых</option>
+													<option value="4 взрослых">4 взрослых</option>
+													<option value="2 взрослых/1 ребенок">2 взрослых/1 ребенок</option>
+													<option value="3 взрослых/2 ребенка">3 взрослых/2 ребенка</option>
 												</select>
 											</div>
 										</div>
@@ -156,9 +156,9 @@
 							</div>
 							<div class="col-md d-flex">
 								<div class="form-group d-flex align-self-stretch">
-									<a href="#"
+									<button type="submit"
 										class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>
-											Проверьте Наличие Свободных мест <small>Лучшая Цена Гарантирована!</small></span></a>
+											Проверьте Наличие Свободных мест <small>Лучшая Цена Гарантирована!</small></span></button>
 								</div>
 							</div>
 						</div>
