@@ -1561,7 +1561,9 @@ textarea.form-control {
 }
 
 // Map
-
+.map_col{
+	width: 100%;
+}
 #map {
 	width: 100%;
 	@include media-breakpoint-down(md) {
